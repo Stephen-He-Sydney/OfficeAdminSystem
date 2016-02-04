@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/CustomStyle.css" rel="stylesheet" />
+</head>
+<body ng-app="mainModel">
+    <div class="tableContainer" style="height:100%">
+        <div style="display:table-row">
+            <div class="content">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/App/startApp.js"></script>
+</body>
+</html>
