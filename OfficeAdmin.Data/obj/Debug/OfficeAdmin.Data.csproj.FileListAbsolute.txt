@@ -1,8 +1,0 @@
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\OfficeAdmin.Data.dll
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\OfficeAdmin.Data.pdb
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\EntityFramework.dll
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\EntityFramework.xml
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\obj\Debug\OfficeAdmin.Data.dll
-D:\________SourceCodes\CsharpPractice\NewOfficeAdmin\OfficeAdmin.Data\obj\Debug\OfficeAdmin.Data.pdb
