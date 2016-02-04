@@ -13,6 +13,17 @@ namespace OfficeAdmin.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            /* Let angularjs otherwise handle incorrect url */
+            routes.MapRoute(
+                name: "App",
+                url: "{*url}",
+                defaults: new
+                {
+                    controller = "Home",
+                    action = "Index"
+                }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

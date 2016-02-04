@@ -1,0 +1,16 @@
+﻿<div class="textboxPos">
+    <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+        <!-- novalidate prevents HTML5 validation  -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+            <input type="text" name="username" class="form-control" ng-model="username" required>
+            <p ng-show="userForm.username.$error.required && !userForm.username.$pristine" class="help-block">Your loginID is required.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : userForm.pwd.$invalid && !userForm.pwd.$pristine }">
+            <input type="password" name="pwd" class="form-control" ng-model="pwd" required>
+            <p ng-show="userForm.pwd.$error.required && !userForm.pwd.$pristine" class="help-block">Your password is required.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+    </form>
+</div>
