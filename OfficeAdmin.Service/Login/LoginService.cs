@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using OfficeAdmin.Data.Domain;
 using OfficeAdmin.Repository;
+using OfficeAdmin.Service.Models;
 
 namespace OfficeAdmin.Service.Login
 {
-    public class LoginService:ILoginService
+    public class LoginService : ILoginService
     {
         private IRepository<UserInfo> _userRepository;
 
@@ -17,9 +14,15 @@ namespace OfficeAdmin.Service.Login
             _userRepository = userRepository;
         }
 
-        public IQueryable<UserInfo> GetAll()
+        public UserInfo IsCurrentLoginValid(LoginServiceModel loginServiceModel)
         {
-            return _userRepository.GetAll();
+            // search linq for user login
+            //要code first设username为唯一键
+
+            return _userRepository.GetAll()
+                                  .SingleOrDefault(p => p.UserName == loginServiceModel.Username
+                                                     && p.Password == loginServiceModel.Password);
+
         }
     }
 }
