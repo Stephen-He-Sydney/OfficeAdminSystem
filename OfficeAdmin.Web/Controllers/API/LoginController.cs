@@ -10,9 +10,9 @@ namespace OfficeAdmin.Web.Controllers.API
     [RoutePrefix("api")]
     public class LoginController : ApiController
     {
-        private ILoginService _loginService;
+        private IUserInfoService _loginService;
 
-        public LoginController(ILoginService loginService)
+        public LoginController(IUserInfoService loginService)
         {
             _loginService = loginService;
         }
@@ -23,18 +23,11 @@ namespace OfficeAdmin.Web.Controllers.API
         {
             LoginServiceModel loginServiceModel = new LoginServiceModel()
             {
-                Username = loginModel.Username,
-                Password = loginModel.Password
+                Username = loginModel.Username.Trim(),
+                Password = loginModel.Password.Trim()
             };
 
-            if (_loginService.IsCurrentLoginValid(loginServiceModel) == null)
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, false);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, true);
-            }
+            return Request.CreateResponse(HttpStatusCode.OK, _loginService.IsCurrentLoginValid(loginServiceModel));
         }
     }
 }

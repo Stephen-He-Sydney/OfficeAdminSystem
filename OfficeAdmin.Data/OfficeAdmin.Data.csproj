@@ -68,7 +68,6 @@
     <Compile Include="Domain\Schedule.cs" />
     <Compile Include="Domain\SysFunc.cs" />
     <Compile Include="Domain\UserInfo.cs" />
-    <Compile Include="Domain\UserState.cs" />
     <Compile Include="Domain\WorkTime.cs" />
     <Compile Include="OfficeAdminContext.cs" />
     <Compile Include="OfficeAdminContextCustomInitializer.cs" />

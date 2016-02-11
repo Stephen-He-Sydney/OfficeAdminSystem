@@ -32,7 +32,6 @@ namespace OfficeAdmin.Data
         public virtual DbSet<Schedule> Schedules { get; set; }
         public virtual DbSet<SysFunc> SysFuncs { get; set; }
         public virtual DbSet<UserInfo> UserInfoes { get; set; }
-        public virtual DbSet<UserState> UserStates { get; set; }
         public virtual DbSet<WorkTime> WorkTime { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

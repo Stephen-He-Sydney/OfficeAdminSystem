@@ -20,7 +20,7 @@ namespace OfficeAdmin.Service
 
             container.RegisterType<IRepository<UserInfo>, EFRepository<UserInfo>>();
            
-            container.RegisterType<ILoginService, LoginService>();
+            container.RegisterType<IUserInfoService, UserInfoService>();
         }
     }
 }

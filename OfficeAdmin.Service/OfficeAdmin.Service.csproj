@@ -64,8 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login\ILoginService.cs" />
-    <Compile Include="Login\LoginService.cs" />
+    <Compile Include="Helpers\CryptoRandomGenerator.cs" />
+    <Compile Include="Helpers\Sha256Helper.cs" />
+    <Compile Include="Login\IUserInfoService.cs" />
+    <Compile Include="Login\UserInfoService.cs" />
     <Compile Include="Models\LoginServiceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLayerBootstrapper.cs" />

@@ -28,15 +28,15 @@ namespace OfficeAdmin.Data.Domain
         public int UserID { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public string Salt { get; set; } // the random secure number for hashing password
         public Genders Gender { get; set; }
         public int RoleID { get; set; }
-        public int UserStateID { get; set; }
+        public bool IsActive { get; set; }
         public int DeptID { get; set; }
 
         // Foreign keys
         public virtual Department Department { get; set; }
         public virtual RoleInfo RoleInfo { get; set; }
-        public virtual UserState UserState { get; set; }
 
         //Current primay key as others' FK
         public virtual ICollection<LoginLog> LoginLogs { get; set; }

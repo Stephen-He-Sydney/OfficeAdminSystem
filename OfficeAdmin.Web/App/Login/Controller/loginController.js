@@ -7,10 +7,10 @@
             var inputVal = { Username: this.username, Password: this.pwd };
 
             loginService.isValidUser(inputVal, function (response) {
-                if (response.success) {
-                    alert("!!!!!!!!!!!");
+                if (response) {
+                    alert("approved!!!!!!!!!!!");
                 } else {
-                    alert("@@@@@@@@@@");
+                    alert("deny!!!!!!!!!!!");
                 }
             });
         }

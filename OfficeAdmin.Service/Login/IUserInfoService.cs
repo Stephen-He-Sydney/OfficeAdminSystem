@@ -3,8 +3,8 @@ using OfficeAdmin.Service.Models;
 
 namespace OfficeAdmin.Service.Login
 {
-    public interface ILoginService
+    public interface IUserInfoService
     {
-        UserInfo IsCurrentLoginValid(LoginServiceModel loginServiceModel);
+        bool IsCurrentLoginValid(LoginServiceModel loginServiceModel);
     }
 }
