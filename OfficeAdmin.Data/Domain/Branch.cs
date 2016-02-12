@@ -7,7 +7,9 @@ namespace OfficeAdmin.Data.Domain
     {
         [Key]
         public int BranchID { get; set; }
+
         public string BranchName { get; set; }
+
         public string BranchShortName { get; set; }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace OfficeAdmin.Data.Domain
@@ -13,7 +12,9 @@ namespace OfficeAdmin.Data.Domain
 
         [Key]
         public int MessageTypeID { get; set; }
+
         public string MessageTypeName { get; set; }
+
         public string MessageDesc { get; set; }
 
         //Current primay key as others' FK

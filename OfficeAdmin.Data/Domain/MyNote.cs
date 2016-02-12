@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OfficeAdmin.Data.Domain
 {
@@ -7,9 +8,15 @@ namespace OfficeAdmin.Data.Domain
     {
         [Key]
         public int NoteID { get; set; }
+
         public string Title { get; set; }
+
         public string Content { get; set; }
+
+        [Index("IX_CreateTime", IsUnique = false)]
         public DateTime CreateTime { get; set; }
+
+        [Index("IX_WriterID", IsUnique = false)]
         public int WriterID { get; set; }
 
         // Foreign keys

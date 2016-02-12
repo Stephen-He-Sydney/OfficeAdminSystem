@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OfficeAdmin.Data.Domain
 {
@@ -13,10 +13,16 @@ namespace OfficeAdmin.Data.Domain
 
         [Key]
         public int DeptID { get; set; }
+
         public string DeptName { get; set; }
+
         public string HomePhone { get; set; }
+
         public string Mobile { get; set; }
+
         public string Fax { get; set; }
+
+        [Index("IX_BranchID", IsUnique = false)]
         public int BranchID { get; set; }
 
         // Foreign keys

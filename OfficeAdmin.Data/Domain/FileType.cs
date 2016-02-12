@@ -14,8 +14,11 @@ namespace OfficeAdmin.Data.Domain
 
         [Key]
         public int FileTypeID { get; set; }
+
         public string FileTypeName { get; set; }
+
         public string FileTypeImage { get; set; }
+
         public string FileTypeExtension { get; set; }
 
         //Current primay key as others' FK

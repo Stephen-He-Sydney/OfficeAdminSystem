@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace OfficeAdmin.Data.Domain
@@ -14,11 +13,14 @@ namespace OfficeAdmin.Data.Domain
 
         [Key]
         public int RoleID { get; set; }
+
         public string RoleName { get; set; }
+
         public string RoleDesc { get; set; }
 
         //Current primay key as others' FK
         public virtual ICollection<RoleRight> RoleRights { get; set; }
+
         public virtual ICollection<UserInfo> UserInfoes { get; set; }
     }
 }

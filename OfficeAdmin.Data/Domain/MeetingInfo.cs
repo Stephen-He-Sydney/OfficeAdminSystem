@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace OfficeAdmin.Data.Domain
@@ -13,6 +12,7 @@ namespace OfficeAdmin.Data.Domain
 
         [Key]
         public int MeetingID { get; set; }
+
         public string MeetingName { get; set; }
 
         //Current primay key as others' FK
