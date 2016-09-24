@@ -1,6 +1,7 @@
 ﻿var appMainModule = angular.module('mainModel', ['ngRoute'])
                              .config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
                                  $routeProvider.when('/', { templateUrl: '/App/Login/View/login.html', controller: 'loginCtrl' });
+                                 $routeProvider.when('/register', { templateUrl: '/App/Register/View/register.html', controller: 'registerCtrl' });
                                  $routeProvider.otherwise({
                                      redirectTo: '/'  //Work together with RoutConfig.cs
                                  });

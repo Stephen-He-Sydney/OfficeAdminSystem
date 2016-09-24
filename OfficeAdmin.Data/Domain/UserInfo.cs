@@ -26,7 +26,7 @@ namespace OfficeAdmin.Data.Domain
         [Key]
         public int UserID { get; set; }
 
-        [MaxLength(500)]// 注册长度不得超过500
+        [MaxLength(500)]// 注册长度不得超过500,且用户名不重复
         [Index("IX_UserName", IsUnique = true)]
         public string UserName { get; set; }
 

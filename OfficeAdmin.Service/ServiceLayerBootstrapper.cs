@@ -8,7 +8,7 @@ using Microsoft.Practices.Unity;
 using OfficeAdmin.Data.Domain;
 using OfficeAdmin.Service.Login;
 using OfficeAdmin.Data;
-using OfficeAdmin.Repository;
+using OfficeAdmin.Data.Repository;
 
 namespace OfficeAdmin.Service
 {

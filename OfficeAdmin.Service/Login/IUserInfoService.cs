@@ -1,10 +1,14 @@
 ﻿using OfficeAdmin.Data.Domain;
-using OfficeAdmin.Service.Models;
 
 namespace OfficeAdmin.Service.Login
 {
     public interface IUserInfoService
     {
-        bool IsCurrentLoginValid(LoginServiceModel loginServiceModel);
+        UserInfo GetUserInfoByUserName(string username);
+        UserInfo GetUserInfoByLogin(string username, string password);
+        UserInfo GetUserInfoByUserId(int id);
+        void AddUserInfo(UserInfo userInfo);
+        void UpdateUserInfo(UserInfo userInfo);
+        void RemoveUserInfo(UserInfo userInfo);
     }
 }

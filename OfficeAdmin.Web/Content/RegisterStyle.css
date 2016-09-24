@@ -1,0 +1,19 @@
+﻿.container {
+    background-color: #0AABEC;
+    padding-bottom:60px;
+}
+
+    .container h2 {
+        margin-top:70px;
+        text-align: center;
+        color:white;
+    }
+
+    .container .help-block {
+        clear:both;
+        color:#b94a48;
+    }
+
+    .container .form-control {
+        width: 400px;
+    }

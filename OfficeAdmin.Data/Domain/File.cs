@@ -19,7 +19,7 @@ namespace OfficeAdmin.Data.Domain
 
         public string Remark { get; set; }
 
-        [MaxLength(200)]
+        [MaxLength(500)]
         [Index("IX_FileOwner", IsUnique = false)]
         public string FileOwner { get; set; }
 

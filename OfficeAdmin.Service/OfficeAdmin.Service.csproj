@@ -68,25 +68,19 @@
     <Compile Include="Helpers\Sha256Helper.cs" />
     <Compile Include="Login\IUserInfoService.cs" />
     <Compile Include="Login\UserInfoService.cs" />
-    <Compile Include="Models\LoginServiceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLayerBootstrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OfficeAdmin.Data\OfficeAdmin.Data.csproj">
       <Project>{da603dd2-a657-48fc-9805-a0ae04973066}</Project>
       <Name>OfficeAdmin.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OfficeAdmin.Repository\OfficeAdmin.Repository.csproj">
-      <Project>{3077fae9-5970-4d97-84bf-813e5d8bf5ad}</Project>
-      <Name>OfficeAdmin.Repository</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
