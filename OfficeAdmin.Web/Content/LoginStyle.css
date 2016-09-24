@@ -45,8 +45,6 @@
 
     .textboxPos input[type=text], input[type=password] {
         width: 300px;
-        clear: both;
-        float: left;
     }
 
     .textboxPos p {
