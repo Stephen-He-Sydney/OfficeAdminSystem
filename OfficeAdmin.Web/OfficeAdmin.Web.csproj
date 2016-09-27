@@ -225,9 +225,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OfficeAdmin.Data\OfficeAdmin.Data.csproj">
-      <Project>{da603dd2-a657-48fc-9805-a0ae04973066}</Project>
-      <Name>OfficeAdmin.Data</Name>
+    <ProjectReference Include="..\OfficeAdmin.Business\OfficeAdmin.Business.csproj">
+      <Project>{4209ce0d-b41c-4a60-a558-65dbc7741f68}</Project>
+      <Name>OfficeAdmin.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\OfficeAdmin.Service\OfficeAdmin.Service.csproj">
       <Project>{ea21cbc7-2150-4f85-9645-ab1a9fdd9e06}</Project>

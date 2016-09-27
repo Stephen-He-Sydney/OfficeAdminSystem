@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using Microsoft.Practices.Unity;
 using OfficeAdmin.Data.Domain;
-using OfficeAdmin.Service.Login;
+using OfficeAdmin.Service.Users;
 using OfficeAdmin.Data;
 using OfficeAdmin.Data.Repository;
 

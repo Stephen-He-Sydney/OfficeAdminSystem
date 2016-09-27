@@ -1,6 +1,6 @@
 ﻿using OfficeAdmin.Data.Domain;
 
-namespace OfficeAdmin.Service.Login
+namespace OfficeAdmin.Service.Users
 {
     public interface IUserInfoService
     {

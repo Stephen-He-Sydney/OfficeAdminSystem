@@ -2,11 +2,11 @@
 using OfficeAdmin.Data.Domain;
 using OfficeAdmin.Data.Repository;
 
-namespace OfficeAdmin.Service.Login
+namespace OfficeAdmin.Service.Users
 {
     public class UserInfoService : IUserInfoService
     {
-        private IRepository<UserInfo> _userRepository;
+        private readonly IRepository<UserInfo> _userRepository;
 
         public UserInfoService(IRepository<UserInfo> userRepository)
         {

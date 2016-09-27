@@ -2,6 +2,7 @@ using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
 using OfficeAdmin.Service;
+using OfficeAdmin.Business;
 using OfficeAdmin.Web.Controllers;
 using OfficeAdmin.Web.Infrastructure;
 
@@ -30,10 +31,9 @@ namespace OfficeAdmin.Web
 
             // e.g. container.RegisterType<ITestService, TestService>();            
 
-            ServiceLayerBootstrapper.RegisterTypes(container);
-
-            container.RegisterType<HomeController>();
-          
+            //ServiceLayerBootstrapper.RegisterTypes(container);
+            BusinessLayerBootstrapper.RegisterTypes(container);
+           
             return container;
         }
     }
