@@ -14,7 +14,7 @@ namespace OfficeAdmin.Business
         public static void RegisterTypes(IUnityContainer container)
         {
             ServiceLayerBootstrapper.RegisterTypes(container);
-            container.RegisterType<ISignIn, SignIn>();
+            container.RegisterType<ISignUp, SignUp>();
         }
     }
 }

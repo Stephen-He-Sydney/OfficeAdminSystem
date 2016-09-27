@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BusinessLayerBootstrapper.cs" />
-    <Compile Include="Register\ISignIn.cs" />
-    <Compile Include="Register\SignIn.cs" />
+    <Compile Include="Register\ISignUp.cs" />
+    <Compile Include="Register\SignUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OfficeAdmin.Data\OfficeAdmin.Data.csproj">

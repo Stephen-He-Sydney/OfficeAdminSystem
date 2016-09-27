@@ -8,13 +8,13 @@ using OfficeAdmin.Data.Domain;
 
 namespace OfficeAdmin.Business.Register
 {
-    public class SignIn : ISignIn
+    public class SignUp : ISignUp
     {
         private readonly IUserInfoService _userInfoService;
         //private readonly IUserInfoService _userInfoService;
         //private readonly IUserInfoService _userInfoService;
         //private readonly IUserInfoService _userInfoService;
-        public SignIn(IUserInfoService userInfoService)
+        public SignUp(IUserInfoService userInfoService)
         {
             _userInfoService = userInfoService;
         }

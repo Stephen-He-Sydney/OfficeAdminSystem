@@ -7,7 +7,7 @@ using OfficeAdmin.Data.Domain;
 
 namespace OfficeAdmin.Business.Register
 {
-    public interface ISignIn
+    public interface ISignUp
     {
         bool IsUsernameExisted(string username);
         bool IsCreateValidPassword(string password);
