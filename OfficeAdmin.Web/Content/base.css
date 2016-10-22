@@ -1,0 +1,9 @@
+﻿.form-custom {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.btn-size {
+    min-width:120px;
+    text-align:center;
+}

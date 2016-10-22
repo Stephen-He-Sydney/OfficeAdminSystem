@@ -11,19 +11,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/base.css" rel="stylesheet" />
     <link href="~/Content/LoginStyle.css" rel="stylesheet" />
-    <link href="~/Content/RegisterStyle.css" rel="stylesheet" />
+    @*<link href="~/Content/RegisterStyle.css" rel="stylesheet" />*@
 </head>
 <body ng-app="mainModel">
-    <div ng-view></div>
-    @*<div class="tableContainer" style="height:100%">
-        <div style="display:table-row">
-            <div class="content">
-                <div ng-view></div>
-            </div>
+    <div class="container">
+        <div class="row">
+            <div ng-view></div>
         </div>
-    </div>*@
-    
+    </div>
+
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/angular-route.js"></script>
     <script src="~/App/startApp.js"></script>
